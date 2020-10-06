@@ -1,2 +1,2 @@
-# React_Project
-Exercise of an app creation using React
+# Vue_Project
+Exercises to learn Vuejs.
