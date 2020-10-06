@@ -32,12 +32,12 @@
                 },
 
                 mounted() {
-                document.querySelector('#button').addEventListener('click', () => {
-                    let name = document.querySelector('#input');
+                    document.querySelector('#button').addEventListener('click', () => {
+                        let name = document.querySelector('#input');
 
-                    app.names.push(name.value);
+                        app.names.push(name.value);
 
-                    name.value = "";
+                        name.value = "";
                     })
                 }
             });
