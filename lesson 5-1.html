@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Vue Practice</title>
+
+        <script src="https://kit.fontawesome.com/e8d5dc1da5.js" crossorigin="anonymous"></script>
+
+        <style type="text/css">
+            .is-loading { background: red; }
+            .is-loading { background:blue; }
+        </style>
+    </head>
+
+    <body>
+        <div id="root">
+            <!-- v-bind:class is the same as :class -->
+            <button :class="{ 'is-loading': is-loading }" @click="toggleClass">Toggle Me</button>
+        </div>
+
+        <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+
+        <script>
+
+            var app = new Vue({
+                el:'#root',
+
+                data: {
+                    isloading: false
+                },
+
+                methods: {
+                    toggleClass() {
+                        this.isloading = true;
+                    }
+                }
+            });
+
+        </script>
+
+    </body>
+</html>
