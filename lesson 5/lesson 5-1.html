@@ -12,14 +12,13 @@
 
         <style type="text/css">
             .is-loading { background: red; }
-            .is-loading { background:blue; }
         </style>
     </head>
 
     <body>
         <div id="root">
             <!-- v-bind:class is the same as :class -->
-            <button :class="{ 'is-loading': is-loading }" @click="toggleClass">Toggle Me</button>
+            <button :class="{ 'is-loading': isLoading }" @click="toggleClass">Toggle Me</button>
         </div>
 
         <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
@@ -30,12 +29,12 @@
                 el:'#root',
 
                 data: {
-                    isloading: false
+                    isLoading: false
                 },
 
                 methods: {
                     toggleClass() {
-                        this.isloading = true;
+                        this.isLoading = true;
                     }
                 }
             });
