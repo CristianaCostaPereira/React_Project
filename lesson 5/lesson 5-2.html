@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Vue Practice</title>
+
+        <script src="https://kit.fontawesome.com/e8d5dc1da5.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+  
+        </script>
+
+        <div id="root">
+            <button :disabled="isDisable" @click="disableClass">Click here to Disable</button>
+        </div>
+
+        <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+
+        <script>
+
+            var app = new Vue({
+                el:'#root',
+
+                data: {
+                    isDisable: false
+                },
+
+                methods: {
+                    disableClass() {
+                        this.isDisable = true;
+                    }
+                }
+            });
+
+        </script>
+
+    </body>
+</html>
