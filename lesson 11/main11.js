@@ -64,7 +64,7 @@ Vue.component("tab", {
         }
     },
 
-    monted() {
+    mounted() {
         this.isActive = this.selected;
     }
 
