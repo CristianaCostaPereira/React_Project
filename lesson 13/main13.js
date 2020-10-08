@@ -1,4 +1,5 @@
-window.Event = new Vue(); // Makes any component fire an event and listening to other events
+// Any Vue instance-new Vue();-has the habikity to listen and emit events
+window.Event = new Vue(); // Shared event instance: Makes any component fire an event and listening to other events
 
 Vue.component ("coupon", {
 
@@ -12,7 +13,6 @@ Vue.component ("coupon", {
     }
 });
 
-// Any Vue instance has the habikity to listen and emit events
 new Vue ({
     el: "#root",
 
