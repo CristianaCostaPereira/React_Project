@@ -7,7 +7,7 @@ Vue.component ("modal", {
                 <header class="modal-card-head">
 
                     <p class="modal-card-title">
-                        <slot name="header"></slot>                    
+                        <slot name="header"></slot>                   
                     </p>
 
                     <button class="delete" aria-label="close"></button>
