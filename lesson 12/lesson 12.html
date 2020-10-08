@@ -20,10 +20,14 @@
 
             <!-- v-on:applied or @applied is the same!-->
             <!-- The line below is the child component !-->
-            <coupon @applied="onCouponApplied"></coupon> <!-- v-on is a good way to communicate between the child and the parent. The parent asks the child to let him know WHEN the child will be apply and will trigger some method !-->
+            <coupon 
+                @applied="onCouponAppliedOnParent">
+            </coupon> <!-- v-on is a good way to communicate between the child and the parent. The parent asks the child to let him know WHEN the child will be apply and will trigger some method !-->
             <!-- onCupponApplied is the parent method !-->
             
-            <h1 v-if="couponApplied">You used a coupon!</h1>
+            <h1
+                v-if="couponApplied">You used a coupon!
+            </h1>
             <!-- This is the parent component (depends upon knwoledge or annoucements from the chlid component and make it one way to COMMUNICATE between the two!-->
 
         </div>

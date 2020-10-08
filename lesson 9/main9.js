@@ -1,15 +1,4 @@
-Vue.component("message", {
-
-    props: ["title", "body"],
-
-    data() {
-
-        return {
-            isVisible: true
-        };
-
-    },
-
+Vue.component("message", {    
     template: `
         <article class="message" v-show="isVisible">
 
@@ -24,15 +13,25 @@ Vue.component("message", {
 
       </article>
     `,
-//  We can do this way or in-line
-//     method: {
+
+    props: ["title", "body"],
+
+    data() {
+
+        return {
+            isVisible: true
+        };
+
+    },
+
+//We can do this way or in-line, like seen in the @click
+//     methods: {
 //         hideModal() {
 //             this.isVisible = false;
 //         }
     
 //     }
 });
-
 
 new Vue({
     el: '#root'

@@ -19,7 +19,7 @@ new Vue ({
     },
 
     methods: {
-        onCouponApplied() {
+        onCouponAppliedOnParent() {
             this.couponApplied = true;
         }
     }
