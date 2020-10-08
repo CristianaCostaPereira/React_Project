@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Vue Practice</title>
+
+        <script src="https://kit.fontawesome.com/e8d5dc1da5.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.css"/>
+
+        <style type="text/css">body { padding: 40px; }</style>
+    </head>
+
+    <body>
+        <div id="root" class="container">
+
+            <modal>
+                <template slot="header">
+                    My own Title 😄 <!--to insert a smiley I need to type: &#xsmileycode-->
+                </template>
+
+                Chocolate bar I love I love. Powder cotton candy jelly.
+                Croissant candy I love soufflé halvah.
+                Sugar plum chocolate bar I love chocolate bar cake.
+
+                <template slot="footer">
+                    <button class="button is-success">Save changes</button>
+
+                    <button class="button">Cancel</button>
+                </template>
+            </modal>
+        </div>
+
+        <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+
+        <script
+            src="main14.js">            
+        </script>
+    </body>
