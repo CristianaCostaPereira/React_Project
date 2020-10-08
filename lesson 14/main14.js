@@ -23,9 +23,8 @@ Vue.component ("modal", {
             </div>
         </div>
     `
-})
-
+});
 
 new Vue ({
     el: "#root"
-})
+});
