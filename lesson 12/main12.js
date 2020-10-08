@@ -10,7 +10,7 @@ Vue.component ("coupon", {
     }
 });
 
-// Route view instance (our route view instance is out PARENT!!!)
+// Root view instance, always at the bottom (our route view instance is out PARENT!!!)
 new Vue ({
     el: "#root",
 
