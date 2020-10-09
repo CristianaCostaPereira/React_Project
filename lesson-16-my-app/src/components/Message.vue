@@ -1,4 +1,4 @@
-<!-- Component contain in its own file !-->
+<!-- 2nd : Define the component by containing it in its own file !-->
 <template>
     <div class="box">
         <p>

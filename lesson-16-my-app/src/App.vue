@@ -1,3 +1,4 @@
+<!--First we define the template !-->
 <template>
 
   <div id="app">
@@ -10,7 +11,7 @@
 
 <script>
 
-  import Message from "./components/Message.vue"; // Import of components that App requires
+  import Message from "./components/Message.vue"; // Import any components that App requires
 
   export default {
     name: 'app',
